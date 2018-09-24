@@ -1,0 +1,34 @@
+* {
+  outline: 1px solid red;
+}
+
+page-home {
+  .imageDiv{
+    position: relative;
+
+    border-radius: 12px;
+    height: 140px;
+    overflow: hidden;
+    padding: 6px;
+  }
+
+  ion-img{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+  }
+
+  p {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    z-index: 100;
+    position: absolute;
+    bottom: 16px;
+    margin: 0;
+    right: 16px;
+  }
+
+}

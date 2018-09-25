@@ -64,9 +64,11 @@
       </ion-list-header>
 
       <a ion-item *ngFor="let challenge of dataChallengeList" (click)="presentContactModal( challenge )">
-        <div class="image-div">
-          <ion-img src="{{challenge.img}}"></ion-img>
-          <p>{{challenge.title}}</p>
+        <div>
+          <div class="image-div" [ngStyle]="{'background-image':'url(' + challenge.img + ')'}">
+            <p>{{challenge.title}}</p>
+          </div>
+          <!-- <ion-img class="image-div" src="{{challenge.img}}"></ion-img> -->
         </div>
 
         <!--<div class="image-div" style="background-image: url(https://images.unsplash.com/photo-1534322989717-f57e38ba9120?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bacabe8d1c88bfa90b369632e9caea0&auto=format&fit=crop&w=2095&q=80);" (click)="presentContactModal( 'Dieta' )">-->

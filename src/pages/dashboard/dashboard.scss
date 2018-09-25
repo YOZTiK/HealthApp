@@ -13,6 +13,17 @@ page-home {
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    p {
+      font-size: 2.3rem;
+      color: black;
+      font-weight: 600;
+      z-index: 100;
+      position: absolute;
+      bottom: 16px;
+      margin: 0;
+      right: 16px;
+      color: white;
+    }
   }
 
   .image-div::after {
@@ -23,17 +34,5 @@ page-home {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
-  }
-
-  p {
-    font-size: 2.3rem;
-    color: black;
-    font-weight: 600;
-    z-index: 100;
-    position: absolute;
-    bottom: 16px;
-    margin: 0;
-    right: 16px;
-    color: white;
   }
 }

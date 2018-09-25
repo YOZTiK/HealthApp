@@ -38,7 +38,9 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  header:     #94D1D9,
+  letter:     #225459
 );
 
 
@@ -46,8 +48,9 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
+$searchbar-ios-border-color: rgba(0, 255, 10, 1);
+$searchbar-ios-background-color: #D8F3F7;
+$searchbar-ios-toolbar-input-background: 	rgba(0, 0, 0, 0.8);
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -59,6 +62,9 @@ $colors: (
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
+
+$searchbar-wp-input-placeholder-color:	#858585;
+$searchbar-wp-input-text-color: #141414;
 
 
 

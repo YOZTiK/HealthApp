@@ -20,7 +20,7 @@ export class DashboardPage {
 
   public dataList = [
     {
-      img: 'https://images.unsplash.com/photo-1509089629531-23ea3dfec72e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbbbe31b95dedb1c61b2d53284704ef9&auto=format&fit=crop&w=2850&q=80',
+      img: 'https://goo.gl/X1uwk9',
       title: 'Alcachofa',
       type: 'challenge',
       text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
@@ -84,7 +84,7 @@ export class DashboardPage {
       ]
     },
     {
-      img: 'image-div" style="background-image: url(https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80);',
+      img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80);',
       title: 'Bienestar',
       type: 'challenge',
       text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
@@ -156,7 +156,7 @@ export class DashboardPage {
   ) {
     for(let challenge of this.dataList){
       if(!platform.is('mobile'))
-        challenge.img = "."+challenge.img;
+        challenge.img = challenge.img;
         this.dataChallengeList.push(challenge);
     }
   }
@@ -170,7 +170,7 @@ export class DashboardPage {
   doRefresh(event){
     this.dataList = [
       {
-        img: 'https://images.unsplash.com/photo-1509089629531-23ea3dfec72e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dbbbe31b95dedb1c61b2d53284704ef9&auto=format&fit=crop&w=2850&q=80',
+        img: 'https://goo.gl/X1uwk9',
         title: 'Alcachofa',
         type: 'challenge',
         text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +

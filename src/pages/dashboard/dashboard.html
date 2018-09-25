@@ -64,10 +64,15 @@
       </ion-list-header>
 
       <a ion-item *ngFor="let challenge of dataChallengeList" (click)="presentContactModal( challenge )">
-        <ion-avatar item-start>
-          <img src="{{challenge.img}}">
-        </ion-avatar>
-        <p>{{challenge.title}}</p>
+        <div class="image-div">
+          <ion-img src="{{challenge.img}}"></ion-img>
+          <p>{{challenge.title}}</p>
+        </div>
+
+        <!--<div class="image-div" style="background-image: url(https://images.unsplash.com/photo-1534322989717-f57e38ba9120?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bacabe8d1c88bfa90b369632e9caea0&auto=format&fit=crop&w=2095&q=80);" (click)="presentContactModal( 'Dieta' )">-->
+        <!--<div class="image-div" style="background-image: url({{challenge.img}});" (click)="presentContactModal( 'Dieta' )">
+          <p>{{challenge.title}}</p>
+        </div>-->
       </a>
     </ion-list>
 

@@ -12,6 +12,27 @@
 
 <ion-content>
 
-  <ion-img width="100%" src="..."></ion-img>
+  <div class="image-div">
+    <ion-img src="{{challenge.img}}"></ion-img>
+    <p id="titleH">{{challenge.title}}</p>
+    <p id="titleF">{{challenge.type}}</p>
+  </div>
 
+  <p>{{challenge.text}}</p>
+  <h2>{{challenge.title2}}</h2>
+  <p>{{challenge.text2}}</p>
+  <ion-img src="{{challenge.img}}"></ion-img>
+  <h2>{{challenge.title3}}</h2>
+  <p>{{challenge.text3}}</p>
+
+  <ion-row>
+    <ion-col col-4 *ngFor="let data of challenge['circles']">
+      <div class="circle-div">
+        {{data.note}}
+      </div>
+      {{data.title}}
+    </ion-col>
+  </ion-row>
+
+  <button ion-button round>Empezar challenge</button>
 </ion-content>

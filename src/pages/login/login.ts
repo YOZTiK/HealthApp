@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
-import {SignUpPage} from "../sign-up/sign-up";
-import {TabsPage} from "../tabs/tabs";
+import { AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
+import { SignUpPage } from "../sign-up/sign-up";
+import { TabsPage } from "../tabs/tabs";
 
 @IonicPage()
 @Component({
@@ -15,6 +15,8 @@ export class LoginPage {
 
   private username: string;
   private password: string;
+
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

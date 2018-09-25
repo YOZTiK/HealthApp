@@ -4,55 +4,57 @@
       Newsfeed
     </ion-title>
   </ion-navbar>
-  <ion-segment [(ngModel)]="sections" (ionChange)="segmentChanged($event)">
-    <ion-segment-button value="camera">
-      Timeline
-    </ion-segment-button>
-    <ion-segment-button value="bookmark">
-      News
-    </ion-segment-button>
-  </ion-segment>
+
+  <ion-toolbar>
+    <ion-segment (ionChange)="slides.slideTo(segment)" [(ngModel)]="segment"  color="warning">
+      <ion-segment-button value="0">
+        <!--<ion-icon name="person"></ion-icon>-->
+        Timeline
+      </ion-segment-button>
+      <ion-segment-button value="1">
+        <!--<ion-icon name="camera"></ion-icon>-->
+        News
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
-  <ion-slides>
+
+  <ion-slides #slides (ionSlideWillChange)="segment=''+slides.getActiveIndex()">
     <ion-slide>
-<ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
-  <div>
-          <ion-list>
-            <ion-item>
-              <ion-icon name="ionic" item-start></ion-icon>
-              @ionicframework
-            </ion-item>
-            <ion-item>
-              <ion-icon name="ionic" item-start></ion-icon>
-              @ionicframework
-            </ion-item>
-            <ion-item>
-              <ion-icon name="ionic" item-start></ion-icon>
-              @ionicframework
-            </ion-item>
-            <ion-item>
-              <ion-icon name="ionic" item-start></ion-icon>
-              @ionicframework
-            </ion-item>
-          </ion-list>
-        </div>
-</ion-scroll>
-
-
+      <ion-item>
+        <ion-icon name="ionic" item-start></ion-icon>
+        First
+      </ion-item>
     </ion-slide>
     <ion-slide>
-      <ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
-        <div>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="ionic" item-start></ion-icon>
-            @ionicframework
-          </ion-item>
-        </ion-list>
-        </div>
-      </ion-scroll>
+      <ion-item>
+        <ion-icon name="ionic" item-start></ion-icon>
+        Second
+      </ion-item>
     </ion-slide>
   </ion-slides>
+
+    <!--<ion-slides>
+      <div [ngSwitch]="newsfeed">
+        <ion-list *ngSwitchCase="'timeline'">
+          <ion-slide>
+            <ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
+
+            </ion-scroll>
+          </ion-slide>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'news'">
+          <ion-slide>
+            <ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
+
+            </ion-scroll>
+          </ion-slide>
+        </ion-list>
+      </div>
+    </ion-slides>-->
+
 </ion-content>

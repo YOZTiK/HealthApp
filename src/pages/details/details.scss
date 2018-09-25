@@ -1,13 +1,26 @@
 page-contact {
-  .page {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 40px;
+  ion-content {
+    //   width: 100vw;
+    //   height: 100vh;
+    //   padding-top: 40px;
     background-color: red;
   }
-  ion-scroll {
-    min-height: 100vh;
-    width: 100%;
-    background-color: blue;
+  .page {
+    flex: 1;
+    background-color: orange;
+  }
+  // .slide-zoom {
+  //   height: 100%;
+  //   width: 100%;
+  //   background-color: blue;
+  // }
+  // ion-scroll {
+  //   width: 100%;
+  //   min-height: 100%;
+  // }
+  .header-ios {
+    .segment-ios {
+      padding: 0 16px 8px;
+    }
   }
 }

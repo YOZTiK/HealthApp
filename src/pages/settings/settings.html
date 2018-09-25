@@ -1,11 +1,37 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Settings
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
+  <div style="padding-top: 10%; padding-left: 30%;">
+    <img class="user-img" src="../../assets/imgs/user.jpg" /><br/><br/>
+    <div class="progress-bar" text-center>
+      <div class="progress"></div>
+    </div>
+  </div>
+  <br/>
+
+  <ion-list>
+    <!--<button ion-item icon-left>
+      <ion-icon name="notifications"></ion-icon>
+        Notificaciones
+    </button>-->
+    <button ion-item icon-left>
+      <ion-icon name="barcode"></ion-icon>
+      Cupones
+    </button>
+    <button ion-item icon-left (click)="openMenu()">
+      <ion-icon name="share"></ion-icon>
+      Invitar Amigos
+    </button>
+    <button ion-item icon-left (click)="openPayments()">
+      <ion-icon name="cash"></ion-icon>
+      Pagos
+    </button>
+    <button ion-item icon-left (click)="openSettings()">
+      <ion-icon name="settings"></ion-icon>
+      Ajustes
+    </button>
+    <button ion-item icon-left (click)="appLogOut()">
+      <ion-icon name="log-out"></ion-icon>
+      Log out
+    </button>
+  </ion-list>
 
 </ion-content>

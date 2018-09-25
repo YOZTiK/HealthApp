@@ -4,47 +4,55 @@
       Newsfeed
     </ion-title>
   </ion-navbar>
+  <ion-segment [(ngModel)]="sections" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="camera">
+      Timeline
+    </ion-segment-button>
+    <ion-segment-button value="bookmark">
+      News
+    </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
 <ion-content>
   <ion-slides>
     <ion-slide>
-      <div className="page">
-      <ion-scroll>
-        <ion-list>
-          <ion-list-header>Follow us on Twitter</ion-list-header>
-          <ion-item>
-            <ion-icon name="ionic" item-start></ion-icon>
-            @ionicframework
-          </ion-item>
-          <ion-item>
-            <ion-icon name="ionic" item-start></ion-icon>
-            @ionicframework
-          </ion-item>
-          <ion-item>
-            <ion-icon name="ionic" item-start></ion-icon>
-            @ionicframework
-          </ion-item>
-          <ion-item>
-            <ion-icon name="ionic" item-start></ion-icon>
-            @ionicframework
-          </ion-item>
-        </ion-list>
-      </ion-scroll>
-      </div>
+
+        <div class="page" >
+<ion-scroll scrollY="true">
+          <ion-list>
+            <ion-item>
+              <ion-icon name="ionic" item-start></ion-icon>
+              @ionicframework
+            </ion-item>
+            <ion-item>
+              <ion-icon name="ionic" item-start></ion-icon>
+              @ionicframework
+            </ion-item>
+            <ion-item>
+              <ion-icon name="ionic" item-start></ion-icon>
+              @ionicframework
+            </ion-item>
+            <ion-item>
+              <ion-icon name="ionic" item-start></ion-icon>
+              @ionicframework
+            </ion-item>
+          </ion-list>
+</ion-scroll>
+        </div>
+
     </ion-slide>
     <ion-slide>
-      <div className="page">
-      <ion-scroll>
+      <ion-scroll scrollY="true">
+        <div>
         <ion-list>
-          <ion-list-header>Follow us on Twitter</ion-list-header>
           <ion-item>
             <ion-icon name="ionic" item-start></ion-icon>
             @ionicframework
           </ion-item>
         </ion-list>
+        </div>
       </ion-scroll>
-      </div>
     </ion-slide>
   </ion-slides>
 </ion-content>

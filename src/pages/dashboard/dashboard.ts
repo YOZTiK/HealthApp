@@ -20,11 +20,6 @@ export class DashboardPage {
     public modalCtrl: ModalController
   ) {}
 
-  constructor(
-    public navCtrl: NavController,
-    public modalCtrl: ModalController
-  ) {}
-
   presentContactModal(title) {
     console.log("title parent: " + title);
     let descriptionModal = this.modalCtrl.create(ChallengeDescriptionPage, {

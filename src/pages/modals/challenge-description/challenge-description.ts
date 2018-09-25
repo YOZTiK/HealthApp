@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
@@ -15,7 +15,12 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class ChallengeDescriptionPage {
 
+  titleT: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+    this.titleT = navParams.get( 'title' );
+    console.log('title Child: '+this.titleT);
+    /*document.getElementById('#title').innerHTML = this.titleT;*/
   }
 
 /*  items = [
@@ -42,9 +47,9 @@ export class ChallengeDescriptionPage {
     console.log("Selected Item", item);
   }*/
 
-  /*dismiss(){
+  dismiss(){
     this.viewCtrl.dismiss();
-  }*/
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChallengeDescriptionPage');

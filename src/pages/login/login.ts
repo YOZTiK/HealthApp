@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController, IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
 import { SignUpPage } from "../sign-up/sign-up";
-import { TabsPage } from "../tabs/tabs";
+import { TutorialPage } from "../tutorial/tutorial";
 
 @IonicPage()
 @Component({
@@ -22,24 +22,24 @@ export class LoginPage {
 
   fbSignIn(){
     this.showAlert('Facebook login page here');
-    this.navCtrl.push(TabsPage).then(()=>{
-      this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.push(TutorialPage).then(()=>{
+      this.navCtrl.setRoot(TutorialPage);
       /*this.presentLoading();*/
     });
   }
 
   googleSignIn(){
     this.showAlert('Google login page here');
-    this.navCtrl.push(TabsPage).then(()=>{
-      this.navCtrl.setRoot(TabsPage);
+    this.navCtrl.push(TutorialPage).then(()=>{
+      this.navCtrl.setRoot(TutorialPage);
       this.presentLoading();
     });
   }
 
   login(){
     if(this.username==='Hippo'&&this.password==='password'){
-      this.navCtrl.push(TabsPage).then(()=>{
-        this.navCtrl.setRoot(TabsPage);
+      this.navCtrl.push(TutorialPage).then(()=>{
+        this.navCtrl.setRoot(TutorialPage);
         this.presentLoading();
       });
     }else

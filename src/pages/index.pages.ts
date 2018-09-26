@@ -5,6 +5,7 @@ export { SettingsConfPage } from '../pages/modals/settings-conf/settings-conf';
 export { NewsfeedDetailsPage } from '../pages/modals/newsfeed-details/newsfeed-details';
 
 //Pages
+export { TutorialPage } from '../pages/tutorial/tutorial';
 export { SettingsPage } from '../pages/settings/settings';
 export { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 export { DashboardPage } from '../pages/dashboard/dashboard';

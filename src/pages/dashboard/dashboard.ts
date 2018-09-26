@@ -19,7 +19,7 @@ export class DashboardPage {
       img: 'https://goo.gl/X1uwk9',
       title: 'Alcachofa',
       type: 'challenge',
-      text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+      text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
         'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
         'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
         'laboris nisi ut aliquip.',
@@ -51,7 +51,7 @@ export class DashboardPage {
       img: 'https://images.unsplash.com/photo-1521727747887-11e4fb3e523c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3fa84affac572e661b95c6cfe0c6bf2&auto=format&fit=crop&w=1352&q=80',
       title: 'Baños',
       type: 'challenge',
-      text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+      text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
         'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
         'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
         'laboris nisi ut aliquip.',
@@ -83,7 +83,7 @@ export class DashboardPage {
       img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80',
       title: 'Bienestar',
       type: 'challenge',
-      text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+      text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
         'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
         'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
         'laboris nisi ut aliquip.',
@@ -115,7 +115,7 @@ export class DashboardPage {
       img: 'https://images.unsplash.com/photo-1534322989717-f57e38ba9120?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bacabe8d1c88bfa90b369632e9caea0&auto=format&fit=crop&w=2095&q=80',
       title: 'Dieta',
       type: 'challenge',
-      text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+      text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
         'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
         'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
         'laboris nisi ut aliquip.',
@@ -168,7 +168,7 @@ export class DashboardPage {
         img: 'https://goo.gl/X1uwk9',
         title: 'Alcachofa',
         type: 'challenge',
-        text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+        text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
           'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
           'laboris nisi ut aliquip.',
@@ -200,7 +200,7 @@ export class DashboardPage {
         img: 'https://images.unsplash.com/photo-1521727747887-11e4fb3e523c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3fa84affac572e661b95c6cfe0c6bf2&auto=format&fit=crop&w=1352&q=80',
         title: 'Baños',
         type: 'challenge',
-        text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+        text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
           'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
           'laboris nisi ut aliquip.',
@@ -232,7 +232,7 @@ export class DashboardPage {
         img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80',
         title: 'Bienestar',
         type: 'challenge',
-        text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+        text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
           'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
           'laboris nisi ut aliquip.',
@@ -264,7 +264,7 @@ export class DashboardPage {
         img: 'https://images.unsplash.com/photo-1534322989717-f57e38ba9120?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5bacabe8d1c88bfa90b369632e9caea0&auto=format&fit=crop&w=2095&q=80',
         title: 'Dieta',
         type: 'challenge',
-        text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
+        text: 'Lorem <b>ipsum dolor sit amet</b>, consectetur adipisicing elit, sed\n' +
           'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
           'laboris nisi ut aliquip.',

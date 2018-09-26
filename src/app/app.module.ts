@@ -13,6 +13,7 @@ import {
   SettingsPage,
   NewsfeedPage,
   DashboardPage,
+  TutorialPage,
   TabsPage } from '../pages/index.pages';
 
 import { LoginPage } from '../pages/login/login';
@@ -32,6 +33,7 @@ import { HTTP } from '@ionic-native/http';
     PaymentsPage,
     SettingsConfPage,
     //Pages
+    TutorialPage,
     SettingsPage,
     NewsfeedPage,
     DashboardPage,
@@ -52,6 +54,7 @@ import { HTTP } from '@ionic-native/http';
     PaymentsPage,
     SettingsConfPage,
     //Pages
+    TutorialPage,
     SettingsPage,
     NewsfeedPage,
     DashboardPage,

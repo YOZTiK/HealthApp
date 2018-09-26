@@ -15,8 +15,8 @@
 
 <ion-content class="tutorial-page">
 
-  <ion-scroll scrollY="true" style="height:100vh;">
-
+  <!--<ion-scroll scrollY="true" style="height:100vh;">
+  </ion-scroll>-->
     <ion-slides pager>
       <ion-slide *ngFor="let slide of slides">
         <ion-toolbar>
@@ -39,7 +39,6 @@
         </button>
       </ion-slide>
     </ion-slides>
-  </ion-scroll>
 <!--
   <button ion-button large clear icon-end color="primary" [innerHTML]="slide.button" [class.hide]="slide.status" (click)="endTutorial()">
     <ion-icon name="arrow-backward"></ion-icon>

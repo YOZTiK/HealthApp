@@ -24,16 +24,25 @@
 
   <ion-slides #slides (ionSlideWillChange)="segment=''+slides.getActiveIndex()">
     <ion-slide>
+
       <ion-item>
         <ion-icon name="ionic" item-start></ion-icon>
         First
       </ion-item>
+
     </ion-slide>
     <ion-slide>
+
       <ion-item>
         <ion-icon name="ionic" item-start></ion-icon>
         Second
       </ion-item>
+      <!--<ion-list>
+        <button ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
+          {{ film.title }}
+        </button>
+      </ion-list>-->
+
     </ion-slide>
   </ion-slides>
 

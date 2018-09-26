@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import {
-  IonicPage,
   AlertController,
   NavController,
-  NavParams,
   LoadingController,
   ModalController,
   ActionSheetController,
@@ -21,7 +19,6 @@ import { PaymentsPage } from '../modals/payments/payments';
 export class SettingsPage {
 
   constructor( public navCtrl: NavController,
-               public navParams: NavParams,
                public alertCtrl: AlertController,
                public loadingCtrl: LoadingController,
                public modalCtrl: ModalController,

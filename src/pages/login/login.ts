@@ -16,8 +16,6 @@ export class LoginPage {
   private username: string;
   private password: string;
 
-
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
@@ -26,7 +24,7 @@ export class LoginPage {
     this.showAlert('Facebook login page here');
     this.navCtrl.push(TabsPage).then(()=>{
       this.navCtrl.setRoot(TabsPage);
-      this.presentLoading();
+      /*this.presentLoading();*/
     });
   }
 

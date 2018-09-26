@@ -1,4 +1,4 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
@@ -17,7 +17,7 @@ export class ChallengeDescriptionPage {
 
   challenge: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  constructor( public navParams: NavParams, public viewCtrl: ViewController ) {
     this.challenge = this.navParams.data;
     //console.log('title Child: '+ this.challenge.title);
   }

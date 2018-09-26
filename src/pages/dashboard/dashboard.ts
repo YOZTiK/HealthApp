@@ -1,11 +1,7 @@
 import { Component } from "@angular/core";
 import {
-  List,
   ModalController,
-  NavController,
-  Platform,
-  NavParams,
-  ViewController
+  Platform
 } from "ionic-angular";
 
 import { ChallengeDescriptionPage } from "../../pages/modals/challenge-description/challenge-description";
@@ -27,7 +23,7 @@ export class DashboardPage {
         'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
         'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
         'laboris nisi ut aliquip.',
-      title2: 'Beneficios',
+      title2: 'Profit',
       text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
         'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n' +
         'enim ad minim veniam, quis nostrud exercitation ullamco\n' +
@@ -84,7 +80,7 @@ export class DashboardPage {
       ]
     },
     {
-      img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80);',
+      img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80',
       title: 'Bienestar',
       type: 'challenge',
       text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
@@ -150,7 +146,6 @@ export class DashboardPage {
   ];
 
   constructor(
-    public navCtrl: NavController,
     public modalCtrl: ModalController,
     public platform: Platform
   ) {
@@ -177,7 +172,7 @@ export class DashboardPage {
           'do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n' +
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco\n' +
           'laboris nisi ut aliquip.',
-        title2: 'Beneficios',
+        title2: 'Profit',
         text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n' +
           'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut\n' +
           'enim ad minim veniam, quis nostrud exercitation ullamco\n' +
@@ -234,7 +229,7 @@ export class DashboardPage {
         ]
       },
       {
-        img: 'image-div" style="background-image: url(https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80);',
+        img: 'https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=88f76505743ef2ed04101148ba74269e&auto=format&fit=crop&w=2850&q=80',
         title: 'Bienestar',
         type: 'challenge',
         text: 'Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed\n' +
@@ -299,11 +294,12 @@ export class DashboardPage {
       }
     ];
     this.dataChallengeList = [];
-    for(let user of this.dataList){
-      if(!this.platform.is('mobile'))
-        user.img = "."+user.img;
 
-      this.dataChallengeList.push(user);
+    for(let challenge of this.dataList){
+      if(!this.platform.is('mobile'))
+        challenge.img = challenge.img;
+
+      this.dataChallengeList.push(challenge);
 
     }
     event.complete();

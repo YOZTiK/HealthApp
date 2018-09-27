@@ -20,12 +20,20 @@ export class NewsfeedPage {
         console.log(data.data); // data received by server
         console.log(data.headers);
 
+        this.show_error('Status: ' + data.status);
+        this.show_error('Data: ' + data.data); // data received by server
+        this.show_error('headers: ' + data.headers);
+
       })
       .catch(error => {
 
         console.log(error.status);
         console.log(error.error); // error message as string
         console.log(error.headers);
+
+        this.show_error('Status: ' + error.status);
+        this.show_error('Data: ' + error.data); // data received by server
+        this.show_error('headers: ' + error.headers);
 
       });
   }

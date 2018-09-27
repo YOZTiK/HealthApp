@@ -13,6 +13,18 @@ page-challenge-description {
     padding: 16px;
   }
 
+  #titleH {
+    font-size: 2.3rem;
+    color: black;
+    font-weight: 600;
+    z-index: 100;
+    position: absolute;
+    top: 16px;
+    margin: 0;
+    right: 16px;
+    color: white;
+  }
+
   #titleF {
     font-size: 1.7rem;
     color: black;
@@ -22,7 +34,7 @@ page-challenge-description {
     bottom: 16px;
     margin: 0;
     right: 16px;
-    /*color: white;*/
+    color: white;
   }
 
   .circle-container {

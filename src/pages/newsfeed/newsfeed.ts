@@ -13,6 +13,8 @@ export class NewsfeedPage {
 
   constructor( public navCtrl: NavController, private http: HTTP, private toastCtrl: ToastController ) {
 
+    this.show_error('Reading data from https://randomuser.me/api/ ');
+
     this.http.get('https://randomuser.me/api/', {dataType: 'json'}, {})
       .then(data => {
 

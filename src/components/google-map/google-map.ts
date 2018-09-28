@@ -33,5 +33,4 @@ export class GoogleMapComponent {
 
     this.map = new google.maps.Map(this.mapElement.nativeElement,mapOptions);
   }
-
 }

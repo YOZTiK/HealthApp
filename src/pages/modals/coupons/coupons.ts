@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, NavController, NavParams, ViewController} from 'ionic-angular';
+import {IonicPage, ModalController, NavController, NavParams, ViewController} from 'ionic-angular';
 
 /**
  * Generated class for the CouponsPage page.
@@ -7,6 +7,8 @@ import {IonicPage, NavController, NavParams, ViewController} from 'ionic-angular
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
+
+import { CouponDetailsPage } from '../../modals/coupon-details/coupon-details';
 
 @IonicPage()
 @Component({
@@ -18,7 +20,11 @@ export class CouponsPage {
   items: any = [];
   itemExpandHeight: number = 100;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalCtrl: ModalController,
+    public viewCtrl: ViewController) {
     this.items = [
       {expanded: false},
       {expanded: false},
@@ -30,6 +36,17 @@ export class CouponsPage {
       {expanded: false},
       {expanded: false}
     ];
+  }
+
+  openCouponsDetails(){
+    console.log('Open Coupon details modal');
+
+    let modal = this.modalCtrl.create(CouponDetailsPage);
+    modal.present();
+    modal.onDidDismiss(data => {
+
+      console.log(data);
+    });
   }
 
   expandItem(item){

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-toolbar>
-    <ion-title id="title" left text-center>Payments</ion-title>
+    <ion-title id="title" left text-center>Descuentos</ion-title>
     <ion-buttons left>
       <button start ion-button (click)="dismiss()">
         <span ion-text color="primary" >Cancel</span>
@@ -22,18 +22,19 @@
 <ion-content padding>
 
   <ion-list>
-    <button detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
+    <ion-item detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
+    <!--<ion-item detail-none ion-item *ngFor="let item of items">-->
       <ion-thumbnail item-start>
         <img src="http://placehold.it/100">
       </ion-thumbnail>
       <h2>My Neighbor Totoro</h2>
       <p>Hayao Miyazaki • 1988</p>
       <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
-        <img src="http://placehold.it/100">
-        <div id="map"></div>
+        <!--<img src="http://placehold.it/100">-->
+        <google-map></google-map>
       </expandable>
-      <button ion-button clear item-end>View</button>
-    </button>
+      <button ion-button (click)="openCouponsDetails()" clear item-end>View</button>
+    </ion-item>
   </ion-list>
 
 </ion-content>

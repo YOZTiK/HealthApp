@@ -8,6 +8,7 @@ import {
   Platform
 } from 'ionic-angular';
 
+import { CouponsPage } from '../modals/coupons/coupons';
 import { LoginPage } from '../login/login';
 import { SettingsConfPage } from '../modals/settings-conf/settings-conf';
 import { PaymentsPage } from '../modals/payments/payments';
@@ -27,6 +28,17 @@ export class SettingsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingsPage');
+  }
+
+  openCoupons(){
+    console.log('Open Coupon modal');
+
+    let modal = this.modalCtrl.create(CouponsPage);
+    modal.present();
+    modal.onDidDismiss(data => {
+
+      console.log(data);
+    });
   }
 
   openSettings(){

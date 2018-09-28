@@ -21,22 +21,50 @@
 </ion-header>
 
 <ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
 
   <ion-slides #slides (ionSlideWillChange)="segment=''+slides.getActiveIndex()">
     <ion-slide>
+      <ion-scroll scrollY="true" style="height:100vh;">
+        <ion-item>
+          <ion-icon name="ionic" item-start></ion-icon>
+          First
+        </ion-item>
 
-      <ion-item>
-        <ion-icon name="ionic" item-start></ion-icon>
-        First
-      </ion-item>
+        <ion-item-sliding #slidingItem *ngFor="let contact of aux2" class="favorite">
+          <ion-item #item (click)="openOption(slidingItem, item)">
+            <ion-avatar item-start>
+              <img src={{contact.picture.thumbnail}} class="favorite">
+            </ion-avatar>
+            <h2>{{contact.name.first}}</h2>
+            <p>{{contact.email}}</p>
+            <button ion-button icon-only clear item-end>
+              <ion-icon name="add" item-end></ion-icon>
+            </button>
+          </ion-item>
+          <ion-item-options side="right" (click)="closeOption()">
+            <button ion-button color="danger">
+              <ion-icon name="trash"></ion-icon>
+              Ignore
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
 
+        <!--<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>-->
+      </ion-scroll>
     </ion-slide>
+
     <ion-slide>
 
       <ion-card>
-
-        <ion-img src="https://images.unsplash.com/photo-1536052737712-5dacded6aa90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af4aa10e9e5bc7b32d095efddd240127&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb"></ion-img>
-
+        <div class="image-div" [ngStyle]="{'background-image':'url(https://images.unsplash.com/photo-1536052737712-5dacded6aa90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af4aa10e9e5bc7b32d095efddd240127&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb)'}">
+          <p>Salud</p>
+        </div>
+        <!--<ion-img src="https://images.unsplash.com/photo-1536052737712-5dacded6aa90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af4aa10e9e5bc7b32d095efddd240127&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb"></ion-img>-->
         <ion-card-content>
           <ion-card-title>
             Riesgos de la medicina para adelgazar
@@ -45,47 +73,19 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </ion-card-content>
-
         <ion-item>
-          <ion-icon name='musical-notes' item-start style="color: #d03e84"></ion-icon>
-          Albums
-          <ion-badge item-end>9</ion-badge>
-        </ion-item>
-
-        <ion-item>
-          <ion-icon name='logo-twitter' item-start style="color: #55acee"></ion-icon>
-          Followers
+          <ion-icon name='heart' item-start style="color: #d03e84"></ion-icon>
+          Like
           <ion-badge item-end>260k</ion-badge>
         </ion-item>
-
+        <ion-item>
+          <ion-icon name='share' item-start style="color: #55acee"></ion-icon>
+          Share
+          <ion-badge item-end>5k</ion-badge>
+        </ion-item>
       </ion-card>
-      <!--<ion-list>
-        <button ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">
-          {{ film.title }}
-        </button>
-      </ion-list>-->
 
     </ion-slide>
   </ion-slides>
-
-    <!--<ion-slides>
-      <div [ngSwitch]="newsfeed">
-        <ion-list *ngSwitchCase="'timeline'">
-          <ion-slide>
-            <ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
-
-            </ion-scroll>
-          </ion-slide>
-        </ion-list>
-
-        <ion-list *ngSwitchCase="'news'">
-          <ion-slide>
-            <ion-scroll scrollY="true" style="height: 100vh; margin-top: 156px;">
-
-            </ion-scroll>
-          </ion-slide>
-        </ion-list>
-      </div>
-    </ion-slides>-->
 
 </ion-content>

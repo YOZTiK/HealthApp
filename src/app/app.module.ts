@@ -1,15 +1,23 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+
+//Components
 import { MyApp } from './app.component';
+import { GoogleMapComponent } from "../components/google-map/google-map";
+import { ExpandableComponent } from "../components/expandable/expandable";
 
 
 //Pages & modals
 import {
+  //Modals
   ChallengeDescriptionPage,
   NewsfeedDetailsPage,
   PaymentsPage,
   SettingsConfPage,
+  CouponDetailsPage,
+  CouponsPage,
+  //Pages
   SettingsPage,
   NewsfeedPage,
   DashboardPage,
@@ -32,6 +40,8 @@ import { HTTP } from '@ionic-native/http';
     NewsfeedDetailsPage,
     PaymentsPage,
     SettingsConfPage,
+    CouponDetailsPage,
+    CouponsPage,
     //Pages
     TutorialPage,
     SettingsPage,
@@ -39,7 +49,10 @@ import { HTTP } from '@ionic-native/http';
     DashboardPage,
     LoginPage,
     SignUpPage,
-    TabsPage
+    TabsPage,
+    //Components
+    GoogleMapComponent,
+    ExpandableComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +66,8 @@ import { HTTP } from '@ionic-native/http';
     NewsfeedDetailsPage,
     PaymentsPage,
     SettingsConfPage,
+    CouponDetailsPage,
+    CouponsPage,
     //Pages
     TutorialPage,
     SettingsPage,

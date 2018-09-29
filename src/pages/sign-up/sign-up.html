@@ -33,12 +33,45 @@
     </ion-item>
     <ion-item>
       <ion-label floating>Contraseña</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="password"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label floating>Confirmar contraseña</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="password"></ion-input>
     </ion-item>
+
+    <h2>Unos cuantos datos más</h2>
+
+    <ion-item>
+      <ion-label color="primary" floating>Peso (kg)</ion-label>
+      <ion-input type="number" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" floating>Estatura</ion-label>
+      <ion-input type="number" ></ion-input>
+    </ion-item>
+
+    <ion-list radio-group>
+      <ion-list-header>
+        Género
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>F</ion-label>
+        <ion-radio checked="false" value="f"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>M</ion-label>
+        <ion-radio checked="false" value="m"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Other</ion-label>
+        <ion-radio checked="false" value="other"></ion-radio>
+      </ion-item>
+    </ion-list>
+
   </ion-list><br/>
   <button ion-button float-right (click)="signUp()">Registrarse</button>
 

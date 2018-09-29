@@ -37,15 +37,18 @@ export class LoginPage {
   }
 
   login(){
-    if(this.username==='Hippo'&&this.password==='password'){
+    if(this.username==='Toola'&&this.password==='password'){
       this.navCtrl.push(TutorialPage).then(()=>{
         this.navCtrl.setRoot(TutorialPage);
         this.presentLoading();
       });
-    }else
-      this.navCtrl.push(SignUpPage, {
-        username: this.username
-      });
+    }
+  }
+
+  signUp(){
+    this.navCtrl.push(SignUpPage, {
+      username: this.username
+    });
   }
 
   showAlert(str: string){

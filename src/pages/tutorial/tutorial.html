@@ -6,9 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>tutorial</ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-buttons end>
+      <button ion-button color="primary" (click)="endTutorial()">Skip</button>
+    </ion-buttons>
+  </ion-toolbar>
 
 </ion-header>
 
@@ -19,11 +21,6 @@
   </ion-scroll>-->
     <ion-slides pager>
       <ion-slide *ngFor="let slide of slides">
-        <ion-toolbar>
-          <ion-buttons end>
-            <button ion-button color="primary" (click)="endTutorial()">Skip</button>
-          </ion-buttons>
-        </ion-toolbar>
         <img [src]="slide.image" class="slide-image"/>
         <h2 class="slide-title" [innerHTML]="slide.title"></h2>
         <p [innerHTML]="slide.description"></p>
@@ -31,7 +28,7 @@
       <ion-slide>
         <ion-toolbar>
         </ion-toolbar>
-        <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+        <img src="../../assets/imgs/tutorial/organs2.jpg" class="slide-image"/>
         <h2 class="slide-title">¿Listo para comenzar a cuidarte?</h2>
         <button ion-button large clear icon-end color="primary" (click)="endTutorial()">
           Empezar

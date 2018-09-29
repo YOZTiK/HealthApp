@@ -22,17 +22,19 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
+    <ion-item detail-none ion-item *ngFor="let item of items">
     <!--<ion-item detail-none ion-item *ngFor="let item of items">-->
-      <ion-thumbnail item-start>
-        <img src="http://placehold.it/100">
-      </ion-thumbnail>
-      <h2>My Neighbor Totoro</h2>
-      <p>Hayao Miyazaki • 1988</p>
-      <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+      <div (click)="expandItem(item)">
+        <ion-thumbnail item-start>
+          <img src="http://placehold.it/100">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
         <!--<img src="http://placehold.it/100">-->
-        <google-map></google-map>
-      </expandable>
+          <google-map></google-map>
+        </expandable>
+      </div>
       <button ion-button (click)="openCouponsDetails()" clear item-end>View</button>
     </ion-item>
   </ion-list>

@@ -80,8 +80,6 @@ export class NewsfeedPage {
         console.log('Data: ' + JSON.stringify(this.aux.results)); // data received by server
         console.log('email: ' + this.aux.results[0].email);
         console.log('headers: ' + data.headers);
-
-
       })
       .catch(error => {
 

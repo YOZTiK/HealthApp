@@ -25,10 +25,10 @@ export class GoogleMapComponent {
       mapTypeControl: false,
       streetViewControl: false*/
       disableDefaultUI: true,
-      fullscreenControl: true,
+      /*fullscreenControl: true,
       fullscreenControlOptions:{
         position: google.maps.ControlPosition.TOP_CENTER
-      }
+      }*/
     }
 
     this.map = new google.maps.Map(this.mapElement.nativeElement,mapOptions);

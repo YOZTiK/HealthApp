@@ -10,8 +10,7 @@ export class GoogleMapComponent {
   map: any;
   constructor() {
   }
-
-  ngOnInit(){
+  /*ngOnInit(){
     this.initMap();
   }
 
@@ -21,16 +20,16 @@ export class GoogleMapComponent {
       center: coords,
       zoom: 14,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
-      /*zoomControl: false,
+      /!*zoomControl: false,
       mapTypeControl: false,
-      streetViewControl: false*/
+      streetViewControl: false*!/
       disableDefaultUI: true,
-      /*fullscreenControl: true,
+      /!*fullscreenControl: true,
       fullscreenControlOptions:{
         position: google.maps.ControlPosition.TOP_CENTER
-      }*/
+      }*!/
     }
 
     this.map = new google.maps.Map(this.mapElement.nativeElement,mapOptions);
-  }
+  }*/
 }

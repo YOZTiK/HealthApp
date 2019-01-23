@@ -4,7 +4,7 @@ import {
   Platform
 } from "ionic-angular";
 
-import { ChallengeDescriptionPage } from "../../pages/modals/challenge-description/challenge-description";
+import { ChallengeDescriptionPage } from "../modals/challenge-description/challenge-description";
 
 @Component({
   selector: "page-home",
